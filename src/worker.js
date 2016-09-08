@@ -13,6 +13,8 @@ class Worker {
     this.gzip = options.gzip;
     this.beforeMiddleware = options.beforeMiddleware;
     this.afterMiddleware = options.afterMiddleware;
+    this.username = options.username;
+    this.password = options.password;
 
     if (!this.httpServer) {
       this.httpServer = new ExpressHTTPServer({
@@ -22,6 +24,8 @@ class Worker {
         gzip: this.gzip,
         beforeMiddleware: this.beforeMiddleware,
         afterMiddleware: this.afterMiddleware,
+        username: this.username,
+        password: this.password
       });
     }
 
