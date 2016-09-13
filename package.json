@@ -28,8 +28,8 @@
     "chalk": "^1.1.3",
     "compression": "^1.6.2",
     "express": "^4.13.3",
-    "fastboot": "^1.0.0-rc.0",
-    "fastboot-express-middleware": "^1.0.0-rc.4",
+    "fastboot": "git://github.com/bobisjan/fastboot.git#f79c3a79767da58fc2edd66aa7ab7fb4bd237ae8",
+    "fastboot-express-middleware": "git://github.com/bobisjan/fastboot-express-middleware.git#34220c970e3ed1eb5d2d6932d267efa3a5410c14",
     "fs-promise": "^0.3.1"
   },
   "devDependencies": {
