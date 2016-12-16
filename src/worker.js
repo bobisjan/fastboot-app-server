@@ -1,7 +1,7 @@
 "use strict";
 
-const FastBoot           = require('fastboot');
-const fastbootMiddleware = require('fastboot-express-middleware');
+const FastBoot           = require('fastboot/src');
+const fastbootMiddleware = require('fastboot-express-middleware/src');
 const ExpressHTTPServer  = require('./express-http-server');
 
 class Worker {
