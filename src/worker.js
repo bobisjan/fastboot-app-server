@@ -15,6 +15,7 @@ class Worker {
     this.afterMiddleware = options.afterMiddleware;
     this.username = options.username;
     this.password = options.password;
+    this.sandboxGlobals = options.sandboxGlobals;
 
     if (!this.httpServer) {
       this.httpServer = new ExpressHTTPServer({
@@ -66,6 +67,7 @@ class Worker {
   buildMiddleware() {
     this.fastboot = new FastBoot({
       distPath: this.distPath,
+      sandboxGlobals: this.sandboxGlobals
     });
 
     return fastbootMiddleware({
